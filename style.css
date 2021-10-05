@@ -6,6 +6,34 @@ html {
     width: 100%;
 }
 
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --blue: #0079FF;
+        --gray-color: #697c9a;
+        --icon-color: #4b6a9b;
+        --h1-color: #2b3442;
+        --bg-color: #f6f8ff;
+        --div-bg: #fefefe;
+        --search-color: #222731;
+        --hover-color: #222731;
+        ;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --blue: #0079FF;
+        --gray-color: #ffffff;
+        --bg-color: #141D2F;
+        --div-bg: #1e2a47;
+        --icon-color: #ffffff;
+        --h1-color: #ffffff;
+        --search-color: #ffffff;
+        --hover-color: #90A4D4;
+    }
+}
+
 :root {
     --blue: #0079FF;
     --gray-color: #697c9a;
@@ -14,6 +42,7 @@ html {
     --bg-color: #f6f8ff;
     --div-bg: #fefefe;
     --search-color: #222731;
+    --hover-color: #222731;
 }
 
 [data-theme="dark"] {
@@ -24,6 +53,7 @@ html {
     --icon-color: #ffffff;
     --h1-color: #ffffff;
     --search-color: #ffffff;
+    --hover-color: #90A4D4;
 }
 
 body {
@@ -84,6 +114,10 @@ body {
     text-align: right;
     letter-spacing: 2.5px;
     color: var(--gray-color);
+}
+
+.switch-container p:hover {
+    color: var(--hover-color);
 }
 
 .theme-img {
@@ -591,21 +625,17 @@ a:link {
         line-height: 19px;
         margin-bottom: 4px;
     }
-    
     .blog-text-css {
         font-size: 13px;
         line-height: 19px;
     }
-    
     .twitter-text-css {
         font-size: 13px;
         line-height: 19px;
         margin-left: 20px;
     }
-    
     .company-text-css {
         font-size: 13px;
         line-height: 19px;
     }
-
 }
