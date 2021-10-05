@@ -41,3 +41,25 @@ window.onload = function() {
     let originalName = "octocat"
     Fetch(originalName);
 }
+
+const toggleSwitch = document.querySelector('.switch-container')
+document.documentElement.setAttribute('data-theme', 'light');
+
+function switchTheme() {
+    if(document.documentElement.getAttribute('data-theme') == 'light'){
+        document.documentElement.setAttribute('data-theme', 'dark');
+        document.querySelector(".search-form").style.boxShadow = "none"
+        document.querySelector(".info-container").style.boxShadow = "none"
+        document.querySelector(".theme").innerHTML = "LIGHT"
+        document.querySelector(".theme-img").style.backgroundImage = "url('/assets/icon-sun.svg')"
+        
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.querySelector(".theme").innerHTML = "DARK"
+        document.querySelector(".theme-img").style.backgroundImage = "url('/assets/icon-moon.svg')"
+    }
+        
+}
+
+toggleSwitch.addEventListener('click', switchTheme, false);

@@ -19,7 +19,7 @@ html {
 [data-theme="dark"] {
     --blue: #0079FF;
     --gray-color: #ffffff;
-    --bg-color: #2b3442;
+    --bg-color: #141D2F;
     --div-bg: #1e2a47;
     --icon-color: #ffffff;
     --h1-color: #ffffff;
@@ -65,16 +65,18 @@ body {
 }
 
 .switch-container {
-    width: 78px;
+    width: fit-content;
     height: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .theme {
     margin: 0;
+    margin-right:16px;
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
@@ -107,6 +109,7 @@ body {
 }
 
 .search-css {
+    background: var(--div-color);
     color: var(--search-color);
     width: 648px;
     height: 69px;
@@ -328,4 +331,8 @@ input:focus {
 
 a:link {
     text-decoration: none;
+  }
+
+  .img-location svg, .img-blog svg, .img-twitter svg, .img-company svg{
+    fill: '#ffffff';
   }
