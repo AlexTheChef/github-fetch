@@ -1,6 +1,6 @@
 let form = document.getElementById("form")
 
-form.addEventListener('submit', function Hello (e) {
+form.addEventListener('submit', function (e) {
     e.preventDefault()
    
     let search = document.getElementById("search").value
