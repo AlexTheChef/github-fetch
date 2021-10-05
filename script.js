@@ -1,13 +1,4 @@
-let form = document.getElementById("form")
-
-form.addEventListener('submit', function (e) {
-    e.preventDefault()
-   
-    let search = document.getElementById("search").value
-
-    let originalName = search.split(' ').join('')
-
-
+const Fetch = (originalName) => {
     fetch("https://api.github.com/users/" + originalName)
         .then((result) => result.json())
         .then((data) => {
@@ -33,4 +24,20 @@ form.addEventListener('submit', function (e) {
             document.getElementById('twitter-text').innerHTML = `<a href="https://twitter.com/${data.twitter_username}"><div class="twitter-text-css">@${data.twitter_username}</div></a>`
             document.getElementById('company-text').innerHTML = `<a href="https://github.com/${data.company}"><div class="company-text-css">@${data.company}</div></a>`
         })
+}   
+
+let form = document.getElementById("form")
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault()
+   
+    let search = document.getElementById("search").value
+    let originalName = search.split(' ').join('')
+    Fetch(originalName);
+    
 })
+
+window.onload = function() {
+    let originalName = "octocat"
+    Fetch(originalName);
+}
