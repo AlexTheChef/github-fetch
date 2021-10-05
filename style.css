@@ -157,17 +157,17 @@ input:focus {
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background: #60ABFF;
 }
 
 a:hover {
-    text-decoration:underline !important;
+    text-decoration: underline !important;
 }
 
 .error-message {
     position: absolute;
-    right:140px;
+    right: 140px;
     margin: 0;
     font-weight: bold;
     font-size: 15px;
@@ -388,61 +388,51 @@ a:link {
     background-position: left;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .container {
         height: 648px;
         width: 573px;
     }
-
     .header {
         width: 573px;
         height: 38px;
     }
-
     .search-form {
-        margin:36px 0px 24px 0px;
+        margin: 36px 0px 24px 0px;
         width: 573px;
         height: 69px;
     }
-
     .search-css {
         width: 493px;
         height: 69px;
     }
-
     .info-container {
         width: 493px;
         height: 401px;
         padding: 40px
     }
-
     .date-joined {
         left: 198px;
         top: 121px;
     }
-
     .name-link {
         height: 67px;
         top: 52px;
         left: 198px;
     }
-
     .name-css {
         margin-bottom: 2px;
     }
-    
     .bio-css {
         width: 493px;
         top: 181px;
-        left:40px;
+        left: 40px;
     }
-
     .middle-div {
         right: 40px;
         top: 263px;
         width: 461px;
     }
-
     .social-container {
         position: absolute;
         top: 378px;
@@ -450,24 +440,172 @@ a:link {
         height: 63px;
         width: 429px;
     }
-
     .location {
         width: 280px;
         margin-bottom: 13px;
     }
-    
     .blog {
         width: 280px;
     }
-    
     .twitter {
         width: 200px;
         margin-bottom: 13px;
     }
-    
     .company {
         width: 200px;
     }
+}
 
+@media screen and (max-width: 767px) {
+    .container {
+        height: 667px;
+        width: 327px;
+    }
+    .header {
+        width: 327px;
+        height: 38px;
+    }
+    .search-form {
+        position: relative;
+        margin: 36px 0px 24px 0px;
+        width: 327px;
+        height: 60px;
+    }
+    .search-img {
+        width: 20px;
+        height: 20px;
+        left: 16px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .search-css {
+        position: absolute;
+        width: 184px;
+        height: 25px;
+        left: 45px;
+        padding-left: 0px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .button {
+        width: 84px;
+        height: 46px;
+        font-size: 14px;
+        line-height: 21px;
+        right: 7px;
+    }
+    .info-container {
+        width: 279px;
+        height: 485px;
+        padding: 32px 24px 0px 24px;
+    }
+    .picture-css {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .date-joined {
+        height: 19px;
+        font-size: 13px;
+        line-height: 19px;
+        left: 114px;
+        top: 82px;
+    }
+    .name-link {
+        height: 49px;
+        top: 33px;
+        left: 114px;
+    }
+    .name-css {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .username-css {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .bio-css {
+        width: 279px;
+        top: 135px;
+        left: 24px;
+    }
+    .middle-div {
+        left: 24px;
+        top: 233px;
+        width: 247px;
+        height: 85px;
+        padding-left: 20px;
+    }
+    .column {
+        height: 48px;
+        width: 100px;
+        margin-right: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .middle-div__style {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 0px;
+        margin-bottom: 8px;
+    }
+    .repos-css {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+    .social-container {
+        position: absolute;
+        top: 342px;
+        left: 24px;
+        height: 125px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .location {
+        width: 280px;
+        margin-bottom: 0px;
+    }
+    .blog {
+        width: 280px;
+    }
+    .twitter {
+        width: 280px;
+        margin-bottom: 0px;
+    }
+    .company {
+        width: 280px;
+    }
+    .location-text-css {
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 4px;
+    }
+    
+    .blog-text-css {
+        font-size: 13px;
+        line-height: 19px;
+    }
+    
+    .twitter-text-css {
+        font-size: 13px;
+        line-height: 19px;
+        margin-left: 20px;
+    }
+    
+    .company-text-css {
+        font-size: 13px;
+        line-height: 19px;
+    }
 
 }
