@@ -157,6 +157,14 @@ input:focus {
     cursor: pointer;
 }
 
+.button:hover{
+    background: #60ABFF;
+}
+
+a:hover {
+    text-decoration:underline !important;
+}
+
 .error-message {
     position: absolute;
     right:140px;
@@ -380,3 +388,86 @@ a:link {
     background-position: left;
 }
 
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 648px;
+        width: 573px;
+    }
+
+    .header {
+        width: 573px;
+        height: 38px;
+    }
+
+    .search-form {
+        margin:36px 0px 24px 0px;
+        width: 573px;
+        height: 69px;
+    }
+
+    .search-css {
+        width: 493px;
+        height: 69px;
+    }
+
+    .info-container {
+        width: 493px;
+        height: 401px;
+        padding: 40px
+    }
+
+    .date-joined {
+        left: 198px;
+        top: 121px;
+    }
+
+    .name-link {
+        height: 67px;
+        top: 52px;
+        left: 198px;
+    }
+
+    .name-css {
+        margin-bottom: 2px;
+    }
+    
+    .bio-css {
+        width: 493px;
+        top: 181px;
+        left:40px;
+    }
+
+    .middle-div {
+        right: 40px;
+        top: 263px;
+        width: 461px;
+    }
+
+    .social-container {
+        position: absolute;
+        top: 378px;
+        left: 40px;
+        height: 63px;
+        width: 429px;
+    }
+
+    .location {
+        width: 280px;
+        margin-bottom: 13px;
+    }
+    
+    .blog {
+        width: 280px;
+    }
+    
+    .twitter {
+        width: 200px;
+        margin-bottom: 13px;
+    }
+    
+    .company {
+        width: 200px;
+    }
+
+
+}
