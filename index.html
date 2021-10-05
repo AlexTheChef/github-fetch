@@ -12,9 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <title>GitHub Search</title>
+    <script>
+        Hello();
+    </script>
 </head>
 
-<body>
+<body onload="load()">
     <div class="container">
         <div class="header">
             <h1 class="header-h1">devfinder</h1>
@@ -23,13 +26,51 @@
                 <div class="theme-img"></div>
             </div>
         </div>
-        <form id="form" class="search-form" onsubmit="validation(event)">
+        <form id="form" class="search-form">
             <div class="search-img"></div>
             <input id="search" class="search-css" type="text" placeholder="Search GitHub username">
             <input class="button" type="submit" value="Search">
         </form>
         <div class="info-container">
-            <div class="" id="users"></div>
+            <div id="picture"></div>
+            <div id="joined"></div>
+            <div class="name-link">
+                <div id="name"></div>
+                <div id="username"></div>
+            </div>
+            <div id="bio"></div>
+            <div class="middle-div">
+                <div class="column">
+                    <p class="middle-div__style">Repos</p>
+                    <div id="repos"></div>
+                </div>
+                <div class="column">
+                    <p class="middle-div__style">Followers</p>
+                    <div id="followers"></div>
+                </div>
+                <div class="column">
+                    <p class="middle-div__style">Following</p>
+                    <div id="following"></div>
+                </div>
+            </div>
+            <div class="social-container">
+                <div class="location">
+                    <img src="/assets/icon-location.svg" class="img-location">
+                    <div id="location-text"></div>
+                </div>
+                <div class="twitter">
+                    <img src="assets/icon-twitter.svg" class="img-twitter">
+                    <div id="twitter-text"></div>
+                </div>
+                <div class="blog">
+                    <img src="/assets/icon-website.svg" class="img-blog">
+                    <div id="blog-text"></div>
+                </div>
+                <div class="company">
+                    <img src="/assets/icon-company.svg" class="img-company">
+                    <div id="company-text"></div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
