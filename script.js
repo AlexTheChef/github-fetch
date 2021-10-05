@@ -119,6 +119,8 @@ function switchTheme() {
     }
     else {
         document.documentElement.setAttribute('data-theme', 'light');
+        document.querySelector(".search-form").style.boxShadow = "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)"
+        document.querySelector(".info-container").style.boxShadow = "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)"
         document.querySelector(".theme").innerHTML = "DARK"
         document.querySelector(".theme-img").style.backgroundImage = "url('/assets/icon-moon.svg')"
         document.querySelector(".img-location").style.backgroundImage = "url('/assets/icon-location.svg')"
