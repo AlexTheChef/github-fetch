@@ -102,31 +102,17 @@ window.onload = function () {
 }
 
 const toggleSwitch = document.querySelector('.switch-container')
-document.documentElement.setAttribute('data-theme', 'light');
+document.documentElement.setAttribute('theme', 'light');
 
 function switchTheme() {
-    if (document.documentElement.getAttribute('data-theme') == 'light') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        document.querySelector(".search-form").style.boxShadow = "none"
-        document.querySelector(".info-container").style.boxShadow = "none"
+    if (document.documentElement.getAttribute('theme') == 'light') {
+        document.documentElement.setAttribute('theme', 'dark');
         document.querySelector(".theme").innerHTML = "LIGHT"
-        document.querySelector(".theme-img").style.backgroundImage = "url('/assets/icon-sun.svg')"
-        document.querySelector(".img-location").style.backgroundImage = "url('/assets/icon-location-dark.svg')"
-        document.querySelector(".img-twitter").style.backgroundImage = "url('/assets/icon-twitter-dark.svg')"
-        document.querySelector(".img-blog").style.backgroundImage = "url('/assets/icon-website-dark.svg')"
-        document.querySelector(".img-company").style.backgroundImage = "url('/assets/icon-company-dark.svg')"
 
     }
     else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        document.querySelector(".search-form").style.boxShadow = "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)"
-        document.querySelector(".info-container").style.boxShadow = "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)"
+        document.documentElement.setAttribute('theme', 'light');
         document.querySelector(".theme").innerHTML = "DARK"
-        document.querySelector(".theme-img").style.backgroundImage = "url('/assets/icon-moon.svg')"
-        document.querySelector(".img-location").style.backgroundImage = "url('/assets/icon-location.svg')"
-        document.querySelector(".img-twitter").style.backgroundImage = "url('/assets/icon-twitter.svg')"
-        document.querySelector(".img-blog").style.backgroundImage = "url('/assets/icon-website.svg')"
-        document.querySelector(".img-company").style.backgroundImage = "url('/assets/icon-company.svg')"
     }
 
 }

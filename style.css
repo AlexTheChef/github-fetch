@@ -45,7 +45,7 @@ html {
     --hover-color: #222731;
 }
 
-[data-theme="dark"] {
+[theme="dark"] {
     --blue: #0079FF;
     --gray-color: #ffffff;
     --bg-color: #141D2F;
@@ -55,6 +55,44 @@ html {
     --search-color: #ffffff;
     --hover-color: #90A4D4;
 }
+
+[theme="dark"] .search-form, [theme="dark"] .info-container {
+    box-shadow: none;
+}
+[theme="light"] .search-form, [theme="light"] .info-container {
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+[theme="dark"] .theme-img {
+    background-image: url('/assets/icon-sun.svg');
+}
+[theme="light"] .theme-img {
+    background-image: url('/assets/icon-moon.svg');
+}
+[theme="dark"] .img-location {
+    background-image: url('/assets/icon-location-dark.svg');
+}
+[theme="light"] .img-location {
+    background-image: url('/assets/icon-location.svg');
+}
+[theme="dark"] .img-twitter {
+    background-image: url('/assets/icon-twitter-dark.svg');
+}
+[theme="light"] .img-twitter {
+    background-image: url('/assets/icon-twitter.svg');
+}
+[theme="dark"] .img-blog {
+    background-image: url('/assets/icon-website-dark.svg');
+}
+[theme="light"] .img-blog {
+    background-image: url('/assets/icon-website.svg');
+}
+[theme="dark"] .img-company {
+    background-image: url('/assets/icon-company-dark.svg');
+}
+[theme="light"] .img-company {
+    background-image: url('/assets/icon-company.svg');
+}
+
 
 body {
     box-sizing: border-box;
